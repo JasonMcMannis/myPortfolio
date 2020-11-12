@@ -1,0 +1,36 @@
+<template name="header">
+  <div class="navbar navbar-default.bg-transparent" role="navigation" >
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">Portfolio
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="Navy" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="news">News
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-broadcast" fill="Navy" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 0 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707z"/>
+                <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="{{blogPathFor 'blogIndex'}}">Blog
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pen-fill" fill="Navy" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons}} 
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
